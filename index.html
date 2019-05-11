@@ -41,6 +41,12 @@
                 <li class="colorlib-active"><a href="index.html">Home</a></li>
                 <li><a href="collection.html">Collection</a></li>
                 <li><a href="about.html">About Me</a></li>
+                <li id="project_tab"><a>My Project</a></li>
+                <div id="project_content">
+                    <li><a href="rising.html">Rising</a></li>
+                    <li><a href="dejavu.html">De javu</a></li>
+                    <li><a href="selfportrait.html">Self Portrait</a></li>
+                </div>
                 <li><a href="cv.html">C.V</a></li>
             </ul>
         </nav>
@@ -147,6 +153,10 @@
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
 <script src="js/google-map.js"></script>
 <script src="js/main.js"></script>
-
+<script>
+    $("#project_tab").click(function() {
+        $("#project_content").fadeToggle();
+    })
+</script>
 </body>
 </html>
